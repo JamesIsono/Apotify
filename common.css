@@ -1,0 +1,130 @@
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.images {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color:rgba(255,255,255,0.2);
+  background-blend-mode:lighten;
+}
+
+@media screen and (max-width: 768px) {
+  .images {
+    width: 100%;
+  }
+}
+
+.mark {
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: 37.5px;
+  left: 5%;
+}
+
+.mark a {
+  text-decoration: none;
+  color: white;
+}
+
+.hover:hover {
+  color: rgb(56, 201, 56);
+  transition: all .5s;
+}
+
+.rl {
+  color :white;
+  text-shadow: 2px 0px 5px black;
+  font-weight: bold;
+}
+
+.toptx {
+  position: absolute;
+  top: 19%;
+  left: 10%;
+  color: white;
+  text-shadow: 2px 0px 5px black;
+  border-left: solid 3px rgb(56, 201, 56);
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.space {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********** slider・スライダー **********/
+.swiper {
+ 
+}
+
+.swiper-container {
+  height: 650px;
+}
+
+.swiper-slide {
+  color: #ffffff;
+  width: 100%;
+  background-color: #9e9e9e;
+  text-align: center;
+}
+
+.slide-image img{
+  width: 300px;
+  height: 200px;
+  padding-top: 250px;
+}
+
+.slide-contents-title {
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 500px;
+}
+
+.slide01 {
+  background: url(img/photo-1410049.jpg!d.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide02 {
+  background: url(img/photo-1412992.jpg!d.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.swiper .swiper-button-prev {
+  background: url(Images/arrow-left.svg) no-repeat;
+}
+
+.swiper .swiper-button-next {
+  background: url(Images/arrow-right.svg) no-repeat;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #fff;
+}

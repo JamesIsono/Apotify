@@ -1,0 +1,135 @@
+/* ファンドページ */
+
+.fund-wrapper {
+  background-image: url(img/fund.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.select-wrapper {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.select-wrapper h3 {
+  color: white;
+  text-shadow: 2px 0px 5px black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.introduce-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  width: 1200px;
+  padding: 20px;
+}
+
+.introduce {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  border: solid 3px rgba(230, 230, 230, 0.5);
+  background: rgba(230, 230, 230, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 10px 10px 0 rgb(133, 133, 133);
+  padding: 20px;
+  margin-right: 20px;
+
+  transition: all .3s;
+}
+
+@media (max-width: 680px) {
+  .introduce-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    width: 450px;
+    padding: 20px;
+  }
+
+  .introduce {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+.introduce:hover {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.intorduce:focus {
+  
+}
+
+.introduce a img{
+  transition: all .3s;
+  border-radius: 3px;
+}
+
+.introduce a img:hover {
+  transform: scale(1.1);
+}
+
+.introduce h4 {
+  color: white;
+  text-shadow: 2px 0px 5px black;
+  margin-bottom: 10px;
+}
+
+
+.introduce p {
+  color: white;
+  text-shadow: 2px 0px 5px black;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.money-wrapper {
+  background-image: url(img/other.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+}
+
+.price-wrapper {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.price-wrapper h3 {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 0px 5px black;
+  margin-bottom: 10px;
+}
+
+.price-wrapper input {
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 40px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}

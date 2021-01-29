@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Layout Practice</title>
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fund.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="common.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="swiper/swiper.min.css">
+    <script src="swiper/swiper.min.js"></script>
+  </head>
+  <body>
+    <!-- ヘッダー  -->
+    <header class="header">
+      <div class="header-logo mark">
+        <a href="#"><span>あ</span>potify</a>
+      </div>
+      <div class="nav">
+        <nav>
+          <ul class="ul">
+            <li><a href="#about" class="ul1">About</a></li>
+            <li><a href="#fund" class="ul1"><span class="fund-nav">Fund</span></a></li> 
+            <li><a href="login.html" class="ul1">登録/ログイン</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メイン -->
+    <main>
+      <section class="top-wrapper images"> <!-- トップイメージ -->
+        <div class="top-text">
+          <h1>Fund for <span>Artists</span></h1>
+        </div>
+      </section>
+      <section class="second-wrapper images">
+        <a id="about"></a>
+        <div class="second-text">
+            <h2><span class="">あ</span>potify は、<br>応援したいアーティストに"投資型"の支援を行うことができる、<br>新しいサービスです。</h2>
+          <div class="second-text_inner">
+            <p>✔︎ 出資金額に応じて、アーティストの収益の一部を、配当として受け取ることができます。</p><br>
+            <p>✔︎ 配当は、限定グッズ等とも交換できます。</p><br>
+            <p>✔︎ その他オンラインライブ無料アクセス券など、出資者限定のリターンがあります。</p>
+          </div>  
+        </div>
+      </section>
+      <section class="third-wrapper images">
+        <a id="fund"></a>
+        <div class="third-text">
+          <h2>さあ、<br>出資してみよう。</h2>
+          <p>1,000JPY〜</p>
+        </div>
+        <div class="try">
+          <a href="fund.html">→ Try Now!</a>
+        </div>
+      </section>
+
+      <section class="swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide01">
+              <div class="slide-contents">
+                <div class="slide-contents-title">
+                  あなたの支援を。
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-slide slide02">
+              <div class="slide-contents">
+                <div class="slide-contents-title">
+                  アーティストを応援しよう。
+                </div>
+
+              </div>
+            </div>
+            
+          </div>
+  
+          <div class="swiper-button">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+  
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-logo mark">
+          <a href="#"><span>あ</span>potify</a>
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="company.html" class="hover">Company<br><span class="second-line">- 会社概要</span></a></li>
+            <li><a href="support.html" class="hover">Support<br><span class="second-line">- お問い合わせ</span></a></li>
+            <li><a href="artist.html" class="hover">for Artists<br><span class="second-line">- アーティストの皆様へ</span></a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </div>
+      <div class="cr">&copy; <span class="cr_text">Apotify AB</span></div>
+    </footer>
+
+    <script type="text/javascript">
+      var swiper = new Swiper('.swiper-container',{
+        
+        speed: 1000,
+        autoplay: true,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        }
+        
+      });
+    </script>
+
+  </body>
+</html>
